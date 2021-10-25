@@ -12,24 +12,27 @@ body {
 
 /*header*/
 header {
-  background: #363636;
+  background: #181818;
   border-bottom: 1px solid black;
   width: 100%;
-  height: 10vh;
+  height: 20%;
 }
 
 header ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 header ul li {
-  padding: 20px 18px;
+  padding: 20px;
 }
 
 header ul li a {
-  color: #bdc0c3;
+  color: rgb(146, 146, 146);
+
+  transition: 0.4s;
 }
 
 a:hover {
@@ -41,37 +44,52 @@ a:hover {
 /*h1*/
 h1 {
   text-align: center;
-  margin-top: 5vh;
+  padding: 4vh;
 }
 /*h1*/
 
 /*book*/
+
+.book {
+  margin: 0px auto;
+  padding: 20px;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.book div {
+  padding: 20px 30px 20px 30px;
+}
+
 .book img {
   width: 250px;
   height: auto;
-  margin-left: 47vh;
-  margin-top: 5vh;
-  border: 1px solid #000;
-  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
+
+  transition: 0.4s;
+}
+
+.book img:hover,
+.book img:active {
+  transition: 0.4s;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
 }
 /*book*/
 
 /*book info*/
-.bookInformation {
-  margin-top: -60vh;
-  margin-left: -25vh;
-}
 
 .bookInformation p {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-left: 125vh;
   font-size: 18px;
-  padding: 23px 0px;
+  padding-bottom: 5px;
 }
 
-button {
+.bookInformation button {
+  margin: 4vh auto 0vh auto;
   background: #f88e37;
   border: none;
   border-radius: 8px;
@@ -80,7 +98,6 @@ button {
   color: #fff;
   width: 50vh;
   height: 10vh;
-  margin-left: 161vh;
 }
 
 button:hover {
@@ -91,19 +108,21 @@ button:hover {
 
 /*footer*/
 .footer {
+  text-align: center;
   display: flex;
   flex-direction: column;
   background: #011926;
   border-top: 1px solid black;
   width: 100%;
-  height: 35vh;
+  height: 30vh;
   margin-top: 22.8vh;
 }
 
 .footer p {
   color: #fff;
   text-align: center;
-  margin-top: 10vh;
+
+  padding: 5vh;
 }
 
 .footer button {
@@ -115,11 +134,9 @@ button:hover {
   color: #fff;
   width: 80vh;
   height: 8vh;
-  margin-left: 70vh;
-  margin-top: 2vh;
 }
 
-button:hover {
+.footer button:hover {
   border: 4px solid grey;
   transition: 0.3s;
 }
